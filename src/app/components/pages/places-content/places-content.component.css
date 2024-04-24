@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+.background-image {
+       width: 1500px;
+    height: 150vh;
+    
+    align-items: center;
+  }
+
+  .container {
+    padding-top:70px ;
+    padding: 70px 0  70px 0;
+    align-items:first baseline;
+    text-align: center;
+    color: #EEEEEE;
+    background: linear-gradient(180deg, rgba(9, 9, 9, 0.3)100% ,  rgb(24, 24, 24, 0.3) 100%) ;
+  }
+  
+  .header{
+    background-image: linear-gradient(to dropdown, #f5f5f5, #e5e5e5);
+  }
+  .weather-widget{
+    display: flex;
+    justify-content: center;
+   margin-top:150px ;
+  }
+  .name {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline 2px;
+  }
+  
+  .tags {
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  .tags a {
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #EFEFEF;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s ease-in-out;
+  }
+  .tags a:hover {
+    background-color: #333;
+  }
+  .discription {
+    margin: 100px 100px 30px 100px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #EFEFEF;
+    text-align: center;
+    transition: 1s ease-in-out;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  
+  .duration {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Favorite {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .Favorite a{
+    color: #EEEEEE;
+    text-decoration: none;
+  }
+  .Favorite:hover {
+    text-decoration: underline 1.5px;
+
+  }

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between; /* Aligns components at the start and end of the header */
+    align-items: center; /* Aligns components vertically at the center */
+    color: #373737;
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+/* Style for the logo */
+.logo {
+  font-size: 35px;
+  cursor: pointer;
+  color: #373737;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+/* Style for the menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 30px;
+    position: relative;
+    font-size: 19.2px;
+    cursor: pointer;
+}
+
+.menu a {
+    color: #373737;
+    text-decoration: none;
+    font-size:larger ;
+    
+}
+.products-container {
+    position: relative; /* Needed for proper positioning of dropdown */
+    display: inline-block; /* Ensures items in the menu bar stay side-by-side */
+  }
+  
+.products-container a{ 
+    text-decoration: none; 
+    width: 250px;
+    color: #373737;
+  }
+
+.products-list {
+    list-style: bullet; 
+    display: none;
+    position: absolute; /* Position the dropdown relative to trigger */
+    background-color: #0000; /* Set background color */
+    padding: 15px; /* Add padding for content */
+    top: 100%; /* Position below the trigger link */
+    left: 0; /* Align to the left of the trigger link */
+    border: 2px solid ;
+    border-radius: 3px;
+  }
+  
+.products-container:hover .products-list {
+    display: block; /* Show the dropdown on hover */
+    background-color: black
+}
+  
+.products-list a { /* Style the dropdown links */
+    display: block; /* Make each link occupy a full line */
+    text-decoration: none; /* Remove underline */
+    color: #EEEEEE; /* Set text color */
+    padding: 10px 10px 10px 10px; /* Add padding for spacing */
+    border-bottom: 2px solid #EEEEEE; /* Add border */
+    transition:ease-out 1.5s;
+    width: 350px;
+    height: min-content;
+
+}
+.products-list a:hover{
+    background-color: #F15412;
+}
+
+/* Style for the products list */
+.products-list a {
+    position: relative;
+    padding-right: 30px;
+}
+
+.products-list a::after {
+    content: "▶"; /* Unicode for the right-pointing arrow */
+    position: absolute;
+    top: 50%;
+    left: 380px;
+    transform: translateY(-50%);
+}
+
+.menu-container {
+    position: relative;
+    align-items: center;
+    border: 2px solid #373737;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 19.2px;
+  }
+.register{
+    padding: 8px;
+    margin-right: 120px;
+    border-radius:5px ;
+    cursor: pointer;
+  }
+.register a{
+    color: #373737;
+    font-size: 19.2px;
+    text-decoration: none;
+}
+  .menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    position: absolute;
+    
+    padding-top: 10px;
+  }
+  .menu-container a{
+    color: #373737;
+    text-decoration: none;
+    font-size: 19.2px;
+  }
+  .menu-list a {
+    color: #eeeeee;
+    position: relative;
+    display: block;
+    border: 2px solid #EEEEEE;
+    padding: 5px 30px 5px 30px;
+    font-size: large;
+    transition: 1.5s;
+    cursor: pointer;
+    background-color: black;
+  }
+  .menu-list a:hover{
+    background-color: #F15412;
+  }
+  
+  .menu-container:hover .menu-list {
+    display: block ;
+  }
+  
+  
+/* Media Query for mobile responsiveness - adjust as needed */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .products-container:hover .products-list {
+        display: block;
+    }
+
+    .register {
+        display: block;
+        margin-top: 10px;
+    }
+}

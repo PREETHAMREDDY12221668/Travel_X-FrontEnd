@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ojuju:wght@200..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+.container{
+    margin-bottom: 20px;
+    width: 100%;
+}
+label{
+    color: #EFEFEF;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding-bottom: 10px;
+}

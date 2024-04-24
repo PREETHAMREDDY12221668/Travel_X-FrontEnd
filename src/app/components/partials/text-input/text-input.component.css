@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ojuju:wght@200..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+input{
+    height: 50px;
+    width: 80%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px 0 15px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #444;
+    caret-color: #339933;
+    background: linear-gradient(#333,#222);
+    margin-bottom: 15px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: 22px;
+    text-align: center;
+}
+input:focus{
+    color: #EFEFEF;
+  box-shadow: 0 0 5px rgba(0,255,0,.2),
+              inset 0 0 5px rgba(0,255,0,.1);
+  background: linear-gradient(#333933,#222922);
+  animation: glow .8s ease-out infinite alternate;
+}
+@keyframes glow {
+    0%{
+     border-color: #339933;
+     box-shadow: 0 0 5px rgba(0,255,0,.2),
+                 inset 0 0 5px rgba(0,0,0,.1);
+   }
+    100%{
+     border-color: #6f6;
+     box-shadow: 0 0 20px rgba(0,255,0,.6),
+                 inset 0 0 10px rgba(0,255,0,.4);
+   }
+ }
+input::placeholder{
+    text-align: center;
+    align-self: center;
+    padding-top: 5px;
+    color: #EFEFEF;
+    font-size:22px ;
+    opacity: 0.6;
+}
+
+input-validation{
+    padding-top: 15px;
+}

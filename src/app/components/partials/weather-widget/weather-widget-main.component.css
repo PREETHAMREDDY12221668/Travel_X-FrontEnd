@@ -1,0 +1,62 @@
+#divWeatherMain{
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(130, 130, 130, 0.8) 0%, rgb(65, 65, 65, 0.8) 75%, rgb(24, 24, 24, 0.8) 100%) ;
+    
+    color: white;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weatherWidgetRow{
+    display:block;
+    margin:0 auto;
+    width: fit-content;
+}
+
+.sun{
+    margin-top: 10px;
+    color: rgb(255, 255, 251);
+    filter: drop-shadow( 1px 1px 10px #ffffff);
+}
+
+.moon{
+    margin-top: 10px;
+    color: white;
+    filter: drop-shadow( 1px 1px 10px white);
+}
+
+
+.rain {
+    color: #4682B4; 
+
+}
+
+.snow {
+    color: #FFFFFF; /* White color for snow */
+}
+
+.thunderstorm {
+    color: #c8ddff; /* Orange color for thunderstorm */
+}
+
+.cloudDiv{
+    margin-top: -40px;
+}
+
+.cloud{
+    color: rgb(40, 41, 42);
+    filter: drop-shadow( 1px 1px 5px rgb(104, 175, 197));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cloudMovement{
+    from{margin-left: -55px;}
+    to{margin-left: 65px;}
+}

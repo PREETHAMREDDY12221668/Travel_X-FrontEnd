@@ -1,0 +1,42 @@
+<app-header></app-header>
+<app-not-found 
+    [visible]="!place"
+    notfoundmessage='Sorry We Dont Have Any Details About The Place'
+    resetLinkText="Back To Places"
+></app-not-found>
+<div *ngIf="place" class="background-image" [style.backgroundImage]="'url(' + place.backgroundUrl + ')'" [style.backgroundSize]="'cover'" [style.width.px]="1500" [style.height.px]="1000">
+    <div class="container">
+        <img *ngIf="place.imageUrl" [src]="place.imageUrl" [alt]="place.name" style="display: none;"/>
+        <div class="details">
+            <div class="header">
+                <span class="name">
+                    {{ place.name }}
+                </span>
+                <div class="tags">
+                    <a *ngFor="let tag of place.tags; let i = index" (click)="updateSelectedContent(i)">
+                      {{ tag }}
+                    </a>
+                  </div>
+                  
+                <div class="discription">
+                    <a >{{ place.content[selectedTagIndex] }}</a>
+                </div>
+                  
+                <div class="duration">
+                    <span>
+                        It will take between  <strong>{{place.duration}}</strong> to visit every place listed in the description. 
+                    </span>
+                </div>
+                <div class="price">
+                     <span>The price would vary accordingly.     {{place.price | currency}}</span>
+                </div>
+                <div class="weather-widget">
+                    <app-weather-widget-main [latitude]="place.lats[selectedTagIndex]" [longitude]="place.lngs[selectedTagIndex]"></app-weather-widget-main>
+                </div>
+            </div>
+            <div routerLink="/Fav-page" class="Favorite">
+                <a (click)="addToFav()" routerLink="/Fav-page">Add To Fav</a>
+            </div>
+        </div>
+    </div>
+</div>
