@@ -26,7 +26,8 @@ import { TextInputComponent } from './components/partials/text-input/text-input.
 import { DefaulButtonComponent } from './components/partials/defaul-button/defaul-button.component';
 import { UserReviewComponent } from './components/partials/user-review/user-review.component';
 import { ContactUsComponent } from './components/partials/contact-us/contact-us.component';
-
+import { MapComponent } from './components/partials/map/map.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -54,10 +55,12 @@ import { ContactUsComponent } from './components/partials/contact-us/contact-us.
     DefaulButtonComponent,
     UserReviewComponent,
     ContactUsComponent,
+    MapComponent,
 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,

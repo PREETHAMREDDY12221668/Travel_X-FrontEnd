@@ -10,7 +10,7 @@
                     <a routerLink="/">PRODUCTS</a>
                     <div class="products-list">
                         <a routerLink="/places">EXPLORE THE WORLD</a>
-                        <a href="https://www.google.com/maps/@26.8727879,72.5127028,4.9z?entry=ttu">MAPS</a>
+                        <a routerLink="/maps">MAPS</a>
                         <a href="https://translate.google.co.in/">LANGUAGE TRANSLATE&LEARN</a>
                         <a href="https://www.oanda.com/currency-converter/en/?from=EUR&to=USD&amount=1">CURRENCY CONVERTER</a>
                         <a href="https://tumodo.io/ind?utm_source=google&utm_medium=cpc&utm_term=online%20travel%20expense%20management&utm_content=gid:159838069574|general_travel_expenses_manage|aid:696733489116|adaptive1|matchtype:e|device:c|network:g|gclid:Cj0KCQjwlZixBhCoARIsAIC745AIEKj-j93lOWZvdYSMRKxBsrrcuLgyQzwmrsD-gPsQmJyMnHr-PBwaAqQhEALw_wcB&utm_campaign=cid:21193273403|ga_search_ind_en_b2b&hsa_acc={accountid}&hsa_cam={adcampaignid}&hsa_grp={adsetid}&hsa_ad={ad_id}&hsa_net=adwords&hsa_src={ad%20network}&hsa_mt=e&hsa_kw=online%20travel%20expense%20management&hsa_tgt=kwd-828281197090&utm_term=online%20travel%20expense%20management&utm_campaign=05.+S+%7C+Ind+%7C+En+%7C+b2b&utm_source=adwords&utm_medium=ppc&hsa_acc=3921936641&hsa_cam=21193273403&hsa_grp=159838069574&hsa_ad=696733489116&hsa_src=g&hsa_tgt=kwd-828281197090&hsa_kw=online%20travel%20expense%20management&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwlZixBhCoARIsAIC745AIEKj-j93lOWZvdYSMRKxBsrrcuLgyQzwmrsD-gPsQmJyMnHr-PBwaAqQhEALw_wcB">BUDGET TRACKER</a>
@@ -22,23 +22,15 @@
         </nav>
     </div>
     
-    <li *ngIf="!isAuth">
-        <a routerLink="users/login">Login</a>
-      </li>
-      <li *ngIf="isAuth" class="menu-container">
+    <div class="register" *ngIf="!isAuth">
+        <a [routerLink]="'/users/login'">LOGIN</a>
+    </div>
+    <div *ngIf="isAuth" class="menu-container">
         <a routerLink="/dashboard">{{user.name}}</a>
-        <div class="menu">
-          <a routerLink="/profile">Profile</a>
-          <a routerLink="/orders">Orders</a>
-          <a (click)="logout()">Logout</a>
-        </div>
-      </li>
-      <li>
-
         <div class="menu-list">
             <a routerLink="/profile">PROFILE</a>
             <a routerLink="/Fav-page">Fav-page</a>
             <a (click)="logout()">LOGOUT</a>
         </div>
-   
+    </div>
 </header>

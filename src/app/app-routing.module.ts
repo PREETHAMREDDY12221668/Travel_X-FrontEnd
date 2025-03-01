@@ -8,6 +8,7 @@ import { FavPageComponent } from './components/pages/fav-page/fav-page.component
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { ContactUsComponent } from './components/partials/contact-us/contact-us.component';
+import { MapComponent } from './components/partials/map/map.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'users/login',component:LoginPageComponent},
   {path:'users/register',component:RegisterPageComponent},
   {path:'contactUs', component:ContactUsComponent},
+  {path:'maps',component:MapComponent},
 ];
 
 @NgModule({

@@ -30,6 +30,12 @@
                 <div class="price">
                      <span>The price would vary accordingly.     {{place.price | currency}}</span>
                 </div>
+                <div class="emergency">
+                    <span>Emergency Services:</span>
+                    <ul>
+                        <li *ngFor="let service of place.emergency_services | keyvalue">{{ service.key }}: {{ service.value }}</li>
+                    </ul>
+                </div>
                 <div class="weather-widget">
                     <app-weather-widget-main [latitude]="place.lats[selectedTagIndex]" [longitude]="place.lngs[selectedTagIndex]"></app-weather-widget-main>
                 </div>
@@ -40,3 +46,6 @@
         </div>
     </div>
 </div>
+
+<map [latitude]="place.lats[selectedTagIndex]" [longitude]="place.lngs[selectedTagIndex]"></map>
+

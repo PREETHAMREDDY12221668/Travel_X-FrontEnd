@@ -1,3 +1,5 @@
+import { LatLng } from "leaflet";
+
 export class Places{
     id!:String;
     name!:string;
@@ -11,5 +13,5 @@ export class Places{
     lats!:number[];
     lngs!:number[];
     emergency_services!:Object[];
-    
+    addresslatlng?:LatLng  
 }

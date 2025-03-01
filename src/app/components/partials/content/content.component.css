@@ -17,7 +17,6 @@ body{
     height: 100%;
     /* background-image: url(../../../../assets/images/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg); */
     background-color: #EFEFEF;
-    
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -25,7 +24,6 @@ body{
     align-items: center;
     grid-gap: 50px;
     padding: 35px 80px;
-
 }
 .contentLeft,
 .contentRight{

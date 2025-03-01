@@ -5,7 +5,7 @@ header {
     justify-content: space-between; /* Aligns components at the start and end of the header */
     align-items: center; /* Aligns components vertically at the center */
     color: #373737;
-    background-color: #EFEFEF;
+    background-color: transparent;
     padding: 20px;
     border-radius: 5px;
     
