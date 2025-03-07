@@ -1,5 +1,5 @@
-const BASE_URL = 'http://localhost:5000';
-
+// const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://travel-x-project-backend.onrender.com';
 export const PLACES_URL= BASE_URL+'/api/places';
 export const PLACES_SEARCH_URL= PLACES_URL+'/search/';
 export const PLACES_BY_ID_URL= PLACES_URL+'/';

@@ -9,9 +9,10 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { ContactUsComponent } from './components/partials/contact-us/contact-us.component';
 import { MapComponent } from './components/partials/map/map.component';
+import { WelcomeScreenComponent } from './components/partials/welcome-screen/welcome-screen.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'places', component:PlacesComponent},
   {path:'places/search/:searchTerm',component:PlacesComponent},
   {path:'places/search/:tags',component:PlacesComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'users/register',component:RegisterPageComponent},
   {path:'contactUs', component:ContactUsComponent},
   {path:'maps',component:MapComponent},
+  {path:'',component:WelcomeScreenComponent}
 ];
 
 @NgModule({

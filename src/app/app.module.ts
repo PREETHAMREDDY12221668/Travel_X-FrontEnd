@@ -28,6 +28,7 @@ import { UserReviewComponent } from './components/partials/user-review/user-revi
 import { ContactUsComponent } from './components/partials/contact-us/contact-us.component';
 import { MapComponent } from './components/partials/map/map.component';
 import { FormsModule } from '@angular/forms';
+import { WelcomeScreenComponent } from './components/partials/welcome-screen/welcome-screen.component';
 
 
 
@@ -56,6 +57,7 @@ import { FormsModule } from '@angular/forms';
     UserReviewComponent,
     ContactUsComponent,
     MapComponent,
+    WelcomeScreenComponent,
 
   ],
   imports: [
