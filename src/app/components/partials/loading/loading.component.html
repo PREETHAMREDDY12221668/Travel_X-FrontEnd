@@ -1,0 +1,12 @@
+<div class="loading-container" [@fadeInScale]="'visible'">
+    <div class="grid" [ngStyle]="{'grid-template-columns': 'repeat(' + cols + ', 1fr)'}">
+      <div *ngFor="let card of [].constructor(numCards); let i = index" class="card" @cardFadeIn>
+        <div class="glowing-box" [@glowEffect]></div>
+        <div class="skeleton skeleton-box"></div>
+        
+        <div class="skeleton skeleton-line"></div>
+        <div class="sameline"> <div class="skeleton skeleton-line short"></div> <div class="skeleton skeleton-line short"></div> </div>
+      </div>
+    </div>
+  </div>
+  

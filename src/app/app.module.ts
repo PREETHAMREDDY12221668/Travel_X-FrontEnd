@@ -29,6 +29,8 @@ import { ContactUsComponent } from './components/partials/contact-us/contact-us.
 import { MapComponent } from './components/partials/map/map.component';
 import { FormsModule } from '@angular/forms';
 import { WelcomeScreenComponent } from './components/partials/welcome-screen/welcome-screen.component';
+import { LoadingComponent } from './components/partials/loading/loading.component';
+import { TripPlanComponent } from './components/partials/trip-plan/trip-plan.component';
 
 
 
@@ -58,7 +60,8 @@ import { WelcomeScreenComponent } from './components/partials/welcome-screen/wel
     ContactUsComponent,
     MapComponent,
     WelcomeScreenComponent,
-
+    LoadingComponent,
+    TripPlanComponent,
   ],
   imports: [
     BrowserModule,

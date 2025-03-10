@@ -1,0 +1,81 @@
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-align: center;
+}
+h1 span{
+    color: #ff5500;
+}
+
+h2 {
+    font-size: 26px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder {
+    color: #8c8c8c;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    transform: scale(1.05);
+}
+
+/* Budget Section */
+.budget-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.budget-container input {
+    width: 45%;
+}
+
+@media (max-width: 600px) {
+    .budget-container {
+        flex-direction: column;
+    }
+
+    .budget-container input {
+        width: 100%;
+    }
+}

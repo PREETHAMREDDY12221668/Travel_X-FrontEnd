@@ -1,6 +1,11 @@
 <app-header></app-header>
-<app-search></app-search>
-<app-not-found [visible]="!places || places.length <= 0" notfoundmessage='Sorry We Dont Have The Details Of Place You Have Searched' resetLinkroute="/places"   resetLinkText="Reset Search"></app-not-found>
+
+<div *ngIf="loading">
+    <app-loading></app-loading>
+</div>
+<diV *ngIf="!loading">
+    <app-search></app-search>
+    <app-not-found [visible]="!places || places.length <= 0" notfoundmessage='Sorry We Dont Have The Details Of Place You Have Searched' resetLinkroute="/places"   resetLinkText="Reset Search"></app-not-found>
 <ul >
     <li *ngFor="let place of places">
         <a [routerLink]="['/place/', place.id]">
@@ -29,3 +34,4 @@
         
     </li>
 </ul>
+</diV>
